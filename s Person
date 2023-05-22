@@ -1,0 +1,486 @@
+= ..cclleeaarr
+
+(from gem actioncable-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  TTeesstt
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem actionpack-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  FFllaasshhHHaasshh
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem activerecord-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  CCoolllleeccttiioonnPPrrooxxyy
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Equivalent to delete_all. The difference is that returns self, instead
+of an array with the deleted objects, so methods can be chained. See
+delete_all for more information. Note that because delete_all removes
+records by directly running an SQL query into the database, the
+updated_at column of the object is not changed.
+
+
+(from gem activerecord-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  QQuueeuuee
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Remove all elements from the queue.
+
+
+(from gem activesupport-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  FFiilleeSSttoorree
+------------------------------------------------------------------------
+  clear(options = nil)
+
+------------------------------------------------------------------------
+
+Deletes all items from the cache. In this case it deletes all the
+entries in the specified file store directory except for .keep or
+.gitkeep. Be careful which directory is specified in your config file
+when using FileStore because everything in that directory will be
+deleted.
+
+
+(from gem activesupport-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  MMeemmCCaacchheeSSttoorree
+------------------------------------------------------------------------
+  clear(options = nil)
+
+------------------------------------------------------------------------
+
+Clear the entire cache on all memcached servers. This method should be
+used with care when shared cache is being used.
+
+
+(from gem activesupport-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  MMeemmoorryySSttoorree
+------------------------------------------------------------------------
+  clear(options = nil)
+
+------------------------------------------------------------------------
+
+Delete all data stored in a given cache store.
+
+
+(from gem activesupport-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  NNuullllSSttoorree
+------------------------------------------------------------------------
+  clear(options = nil)
+
+------------------------------------------------------------------------
+
+
+(from gem activesupport-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RReeddiissCCaacchheeSSttoorree
+------------------------------------------------------------------------
+  clear(options = nil)
+
+------------------------------------------------------------------------
+
+Clear the entire cache on all Redis servers. Safe to use on shared
+servers if the cache is namespaced.
+
+Failsafe: Raises errors.
+
+
+(from gem activesupport-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSttoorree
+------------------------------------------------------------------------
+  clear(options = nil)
+
+------------------------------------------------------------------------
+
+Clears the entire cache. Be careful with this method since it could
+affect other processes if shared cache is being used.
+
+The options hash is passed to the underlying cache implementation.
+
+Some implementations may not support this method.
+
+
+(from gem activesupport-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  LLooccaallSSttoorree
+------------------------------------------------------------------------
+  clear(options = nil)
+
+------------------------------------------------------------------------
+
+
+(from gem activesupport-7.0.4.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  IInnfflleeccttiioonnss
+------------------------------------------------------------------------
+  clear(scope = :all)
+
+------------------------------------------------------------------------
+
+Clears the loaded inflections within a given scope (default is :all).
+Give the scope as a symbol of the inflection type, the options are:
+:plurals, :singulars, :uncountables, :humans, :acronyms.
+
+  clear :all
+  clear :plurals
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  AArrrraayy
+------------------------------------------------------------------------
+  array.clear -> self
+
+------------------------------------------------------------------------
+
+Removes all elements from self:
+  a = [:foo, 'bar', 2]
+  a.clear # => []
+
+
+(from gem concurrent-ruby-1.2.2)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  AAttoommiiccRReeffeerreenncceeMMaappBBaacckkeenndd
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Implementation for clear. Steps through each bin, removing all nodes.
+
+
+(from gem concurrent-ruby-1.2.2)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  JJaavvaaNNoonnCCoonnccuurrrreennttPPrriioorriittyyQQuueeuuee
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+@!macro priority_queue_method_clear
+
+
+(from gem concurrent-ruby-1.2.2)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  MMrriiMMaappBBaacckkeenndd
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem concurrent-ruby-1.2.2)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  NNoonnCCoonnccuurrrreennttMMaappBBaacckkeenndd
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem concurrent-ruby-1.2.2)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRuubbyyNNoonnCCoonnccuurrrreennttPPrriioorriittyyQQuueeuuee
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+@!macro priority_queue_method_clear
+
+
+(from gem concurrent-ruby-1.2.2)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSyynncchhrroonniizzeeddMMaappBBaacckkeenndd
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+==== ((UUsseess  ssuuppeerrccllaassss  mmeetthhoodd  RRDDoocc::::AAnnyyMMeetthhoodd::  CCoonnccuurrrreenntt::::CCoolllleeccttiioonn::::NNoonnCCoonnccuurrrreennttMMaappBBaacckkeenndd##cclleeaarr))
+------------------------------------------------------------------------
+
+
+(from gem concurrent-ruby-1.2.2)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  LLoocckkFFrreeeeSSttaacckk
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+@return [true, false]
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  DDBBMM
+------------------------------------------------------------------------
+  dbm.clear
+
+------------------------------------------------------------------------
+
+Deletes all data from the database.
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  EENNVV
+------------------------------------------------------------------------
+  ENV.clear -> ENV
+
+------------------------------------------------------------------------
+
+Removes every environment variable; returns ENV:
+  ENV.replace('foo' => '0', 'bar' => '1')
+  ENV.size # => 2
+  ENV.clear # => ENV
+  ENV.size # => 0
+
+
+(from gem faraday-1.10.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  OOppttiioonnss
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Public
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  PPiinnnneedd
+------------------------------------------------------------------------
+  clear
+
+------------------------------------------------------------------------
+
+Clear the reference to the object this is pinning.
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  PPrrooffiilleerr
+------------------------------------------------------------------------
+  GC::Profiler.clear          -> nil
+
+------------------------------------------------------------------------
+
+Clears the GC profiler data.
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  GGDDBBMM
+------------------------------------------------------------------------
+  gdbm.clear -> gdbm
+
+------------------------------------------------------------------------
+
+Removes all the key-value pairs within _g_d_b_m.
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  DDeeppeennddeennccyyLLiisstt
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSoouurrcceeLLiisstt
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Removes all sources from the SourceList.
+
+
+(from gem git-1.18.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSttaasshheess
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  HHaasshh
+------------------------------------------------------------------------
+  hash.clear -> self
+
+------------------------------------------------------------------------
+
+Removes all hash entries; returns self.
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  CCoolloorr
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem oj-3.14.3)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSttaattee
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem nio4r-2.5.9)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  BByytteeBBuuffffeerr
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem parser-3.2.2.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSttaacckkSSttaattee
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem ruby-progressbar-1.13.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  NNoonnTTttyy
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem ruby-progressbar-1.13.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  NNuullll
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem ruby-progressbar-1.13.0)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  TTttyy
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem pry-0.14.2)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  HHiissttoorryy
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Clear this session's history. This won't affect the contents of the
+history file.
+
+
+(from gem pry-0.14.2)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  RRiinngg
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Clear the buffer and reset count. @return [void]
+
+
+(from gem public_suffix-5.0.1)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  LLiisstt
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Removes all rules.
+
+@return [self]
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  QQuueeuuee
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Removes all objects from the queue.
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  IISSeett
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from gem rack-2.2.7)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSeessssiioonnHHaasshh
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSeett
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Removes all elements and returns self.
+  set = Set[1, 'c', :s]             #=> #<Set: {1, "c", :s}>
+  set.clear                         #=> #<Set: {}>
+  set                               #=> #<Set: {}>
+
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSiizzeeddQQuueeuuee
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Removes all objects from the queue.
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSttrriinngg
+------------------------------------------------------------------------
+  string.clear    ->  string
+
+------------------------------------------------------------------------
+
+Makes string empty.
+
+  a = "abcde"
+  a.clear    #=> ""
+
+
+(from ruby core)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  SSttrriinnggSSccaannnneerr
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+Equivalent to #terminate. This method is obsolete; use #terminate
+instead.
+
+
+(from gem websocket-driver-0.7.5)
+=== IImmpplleemmeennttaattiioonn  ffrroomm  HHeeaaddeerrss
+------------------------------------------------------------------------
+  clear()
+
+------------------------------------------------------------------------
+
+
